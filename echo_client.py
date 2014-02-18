@@ -2,7 +2,7 @@ import socket
 import sys
 
 def main(argv):
-	# pass
+	
 	if (argv[0] and type(argv[0]) == str):
 		message = argv[0]
 	else:
@@ -13,7 +13,7 @@ def main(argv):
 	s.sendall(message)
 	received_message = s.recv(1024)
 	s.close()
-	#print(received_message)
+	print(received_message)
 	return received_message
 
 if __name__ == '__main__':
