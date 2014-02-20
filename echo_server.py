@@ -11,7 +11,7 @@ def main():
 			if message:
 				connection.send(message)
 		finally:
-			connection.close
+			connection.close()
 
 if __name__ == '__main__':
 	main()
